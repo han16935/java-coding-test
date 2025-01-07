@@ -1,4 +1,4 @@
-package section2_string;
+package inflearn.section2_string;
 
 
 import java.io.BufferedReader;
