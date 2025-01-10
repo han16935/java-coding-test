@@ -47,17 +47,13 @@ public class problem3_가위바위보 {
 
         // 이 함수 결과로 나오는 값
         public static char getWinner(int a, int b) {
-            return Arrays.stream(RSP.values())
-                    .filter(rspType -> {
-                        return rspType.turnNum == a;
-                    })
-                    .findFirst()
-                    .map(aType -> {
-                        if (aType.loseNum == b) return 'B';
-                        if (a == b) return 'D';
-                        return 'A';
-                    })
-                    .orElse('X');
+            if (a == b) return 'D';
+            for (RSP rspType : RSP.values()) {
+                 if (rspType.turnNum == a) {
+                     return rspType.loseNum == b ? 'B' : 'A';
+                 }
+            }
+            return 'X';
         }
     }
 }
