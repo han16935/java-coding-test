@@ -1,6 +1,7 @@
 package inflearn.section3_array;
 
 import java.io.*;
+import java.util.StringTokenizer;
 
 public class problem1_큰수출력하기 {
 
@@ -12,13 +13,14 @@ public class problem1_큰수출력하기 {
         int [] arr = new int[n+1];
 
         // 2. arr에 값 넣기
-        String[] s = strArr.split(" ");
-        for(int i=0;i<s.length;i++) {
-            arr[i] = Integer.parseInt(s[i]);
+        StringTokenizer st = new StringTokenizer(strArr);
+        int i = 0;
+        while(st.hasMoreTokens()) {
+            arr[i++] = Integer.parseInt(st.nextToken());
         }
 
         // 3. 자신보다 큰 수 출력
-        for(int j=0;j<s.length-1;j++) {
+        for(int j=0;j<n;j++) {
             if (arr[j] < arr[j+1]) {
                 System.out.print(arr[j+1]);
                 System.out.print(" ");
