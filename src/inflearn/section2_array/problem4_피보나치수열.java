@@ -1,6 +1,5 @@
-package inflearn.section3_array;
+package inflearn.section2_array;
 
-import java.io.*;
 import java.util.*;
 
 public class problem4_피보나치수열 {
