@@ -1,7 +1,6 @@
-package inflearn.section2_string;
+package inflearn.section1_string;
 
 import java.io.*;
-import java.util.*;
 
 public class problem11_문자열압축 {
     private static String solution(String s) {
