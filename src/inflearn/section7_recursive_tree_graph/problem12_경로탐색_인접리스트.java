@@ -8,7 +8,7 @@ public class problem12_경로탐색_인접리스트 {
     static int m;
     static int answer = 0;
     static boolean[] isVisited;
-    static ArrayList<ArrayList<Integer>> arr = new ArrayList<ArrayList<Integer>>();
+    static ArrayList<ArrayList<Integer>> arr = new ArrayList<>();
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
