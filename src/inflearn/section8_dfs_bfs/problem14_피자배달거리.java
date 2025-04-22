@@ -46,7 +46,7 @@ public class problem14_피자배달거리 {
     private static void choosePizzas(int chosenCount, int index) {
 
         if (chosenCount == m) {
-            int cityPizzaDistance = 0; // 이번 케이스의 피자배달거리 (distnaceFromHomeToPizza의 총합)
+            int cityPizzaDistance = 0; // 이 케이스로 피자집이 선택되엇을 때의 피자배달거리 총합
 
             // 2. 1에서 선택된 pizza 집 대해 각 집 대해 피자배달거리 계산
             for (Home home : homes) {
