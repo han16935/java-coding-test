@@ -11,7 +11,7 @@ import java.io.*;
  *         - 만약 업데이트되었을 경우, 이전 선수 (그 선수보다 키가 큰 선수) 보다 무거운 선수는 없으므로 선출!
  *         - 만약 업데이트되지 않았을 경우, 이전 선수 (그 선수보다 키가 큰 선수) 중 그 선수보다 무거운 선수가 있다는 의미이므로, 선출되지 않음
  */
-public class problem1_씨름선수 {
+public class problem1_씨름선수_IMPORTANT {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
