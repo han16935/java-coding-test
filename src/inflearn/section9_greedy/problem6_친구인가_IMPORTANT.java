@@ -30,7 +30,7 @@ public class problem6_친구인가_IMPORTANT {
     public static void union(int start, int end) {
         int startSet = find(start);
         int endSet = find(end);
-        if (startSet != endSet) arr[end] = startSet;
+        if (startSet != endSet) arr[endSet] = startSet;
     }
 
     public static void main(String[] args) throws IOException{
