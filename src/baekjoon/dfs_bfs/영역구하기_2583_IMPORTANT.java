@@ -3,6 +3,10 @@ package baekjoon.dfs_bfs;
 import java.util.*;
 import java.io.*;
 
+/**
+ * 이전에 푼 아일랜드 문제 응용, 사각형을 입력받고, 이후 BFS 를 통해 size 받기
+ *
+ */
 public class 영역구하기_2583_IMPORTANT {
     static int m, n, k;
     static int[][] board;
@@ -63,7 +67,6 @@ public class 영역구하기_2583_IMPORTANT {
             }
         }
 
-        // Output results
         System.out.println(areaPq.size());
         StringBuilder sb = new StringBuilder();
         while (!areaPq.isEmpty()) {
