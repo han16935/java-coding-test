@@ -3,6 +3,7 @@ package baekjoon.dfs_bfs;
 import java.util.*;
 import java.io.*;
 
+// 앞서 말한 문제와 비슷비슷
 public class 단지번호붙이기_2667 {
     static int n;
     static int [][] board;
