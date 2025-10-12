@@ -3,7 +3,7 @@ package baekjoon.etc;
 import java.util.*;
 import java.io.*;
 
-public class 구간합5_11660_타풀이 {
+public class 구간합5_11660_타풀이_IMPORTANT {
 
     static int n, m;
     static int[][] arr;
