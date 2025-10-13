@@ -23,19 +23,19 @@ public class 스택수열_1874 {
 
         while (stackPushNumber <= n) {
             stack.push(stackPushNumber);
-            sb.append("+" + "\n");
+            sb.append("+\n");
             stackPushNumber++;
 
             while (!stack.isEmpty() && stack.peek() == arr[arrIndex]) {
                 stack.pop();
-                sb.append("-" + "\n");
+                sb.append("-\n");
                 arrIndex++;
             }
         }
 
         while(!stack.isEmpty() && stack.peek() == arr[arrIndex]) {
             stack.pop();
-            sb.append("+" + "\n");
+            sb.append("+\n");
             arrIndex++;
         }
 
