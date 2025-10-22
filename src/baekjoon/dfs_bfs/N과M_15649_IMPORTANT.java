@@ -6,40 +6,38 @@ import java.io.*;
 public class N과M_15649_IMPORTANT {
 
     static int n, m;
-    static boolean[] isVisited;
     static int[] answer;
-    static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+    static boolean[] isVisited;
 
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
+
         n = Integer.parseInt(st.nextToken());
         m = Integer.parseInt(st.nextToken());
-
-        isVisited = new boolean[n + 1];
         answer = new int[m];
+        isVisited = new boolean[n + 1];
 
         solution(0);
-        bw.flush();
-        bw.close();
     }
 
-    static void solution(int depth) throws Exception {
-        if (depth == m) {
+    static void solution(int count) {
+        if (count == m) {
             for (int i = 0; i < m; i++) {
-                bw.write(answer[i] + " ");
+                System.out.print(answer[i] + " ");
             }
-            bw.newLine();
-            return;
+            System.out.println();
         }
 
-        for (int i = 1; i <= n; i++) {
-            if (!isVisited[i]) {
-                isVisited[i] = true;
-                answer[depth] = i;
-                solution(depth + 1);
-                isVisited[i] = false;
-            }
+        else {
+           for (int nextNum = 1; nextNum <= n; nextNum ++) {
+               if (!isVisited[nextNum]) {
+                   isVisited[nextNum] = true;
+                   answer[count] = nextNum;
+                   solution (count + 1);
+                   isVisited[nextNum] = false;
+               }
+           }
         }
     }
 }
