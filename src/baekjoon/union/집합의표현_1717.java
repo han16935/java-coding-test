@@ -35,9 +35,9 @@ public class 집합의표현_1717 {
     }
 
     static void union(int first, int second) {
-        int firstSet = find(first);
-        int secondSet = find(second);
-        if (firstSet != secondSet) union[firstSet] = secondSet;
+        int firstSetParent = find(first);
+        int secondSetParent = find(second);
+        if (firstSetParent != secondSetParent) union[firstSetParent] = secondSetParent;
     }
 
     static int find(int num) {
